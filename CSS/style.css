@@ -5,55 +5,49 @@
     appearance: none;
     border: 0;
     text-decoration: none;
-    list-style: none;
 }
 
 body {
+    display: flex;
     flex-direction: column;   
-    height: 100vh;
-    background-color: azure;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    color: #000;
 }
 
 header {
     background-color: peru;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 60px;
     height: 120px;
 }
 
-body, header, .logo, .pageLinks, .backImg, .categoriesImgs {
+.logo img {
+    height: 80px;
+}
+
+.pageLinks {
     display: flex;
-
-}
-.pageLinks, .linkContainer, main{
-    align-items: center;
-}
-.pageLinks{
-    justify-content: space-between;
-    margin-right: 220px;
-    gap: 10px
-}
-.linkContainer {
-    font-size: 20px;
-    gap: 5px;
+    gap: 20px;
 }
 
-a {
-    color: black;
+.linkContainer a {
+    font-size: 18px;
     font-weight: bold;
-    cursor: pointer;
+    color: black;
 }
 
-a:hover {
+.linkContainer a:hover {
     color: gray;
 }
 
 main {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    gap: 40px;
-    width: 200vh;
+    gap: 60px;
+    max-width: 1200px;
     margin: 0 auto; 
 }
 
@@ -63,24 +57,188 @@ main {
     background-size: cover;   
     height: 50vh;
     width: 100%;
-    margin: 0 auto; 
+    display: flex;
     align-items: flex-end;
     justify-content: center;
 }
 
-h1 {
-    background-color: azure;
-    font-size: 40px;
+.overText h1 {
+    background-color: white;
+    padding: 15px 25px;
+    font-size: 32px;
+    font-weight: bold;
     margin: 10vh;
 }
 
-.categories {
-    
 
+.categories {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.categories h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.categories p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.categoriesImgs {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap;
 }
 
 .imgfood {
-    width: 50vh;
-    height: 52vh;
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.two{
+    background-color: rgb(229, 232, 235);
+
+}
+.backColor {
+    background-color: white;
+}
+
+nav a {
+    color: #000;
+}
+
+nav a:hover {
+    color: gray;
+}
+
+/* Hero image section */
+.backhamburg {
+    background-image: url(/images/bengal-burger.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.backhamburg .overText h1 {
+    background-color: white;
+    padding: 15px 25px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+.time {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e6e6f0;  
+    padding: 50px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.time p {
+    margin: 0;
+}
+
+.time span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.recipe-header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.recipe-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.recipe-header .reviews {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.recipe-header .save-print {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.recipe-header .save-btn {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quote-box {
+    background-color: #f2f2f2;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    font-style: italic;
+    color: #555;
+}
+
+.recipe-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.recipe-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.recipe-content ul, 
+.recipe-content ol {
+    padding-left: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.recipe-content ul li, 
+.recipe-content ol li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: peru;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    height: 120px;
 }
 
