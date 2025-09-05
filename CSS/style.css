@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    flex-direction: column;   
+    height: 100vh;
+    background-color: azure;
+}
+
+header {
+    background-color: peru;
+    justify-content: space-between;
+    padding: 0 800px;
+    height: 100px;
+}
+
+body, header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    
+}
