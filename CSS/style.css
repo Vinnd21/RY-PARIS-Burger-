@@ -17,15 +17,70 @@ body {
 header {
     background-color: peru;
     justify-content: space-between;
-    padding: 0 800px;
-    height: 100px;
+    padding: 0 60px;
+    height: 120px;
 }
 
-body, header {
+body, header, .logo, .pageLinks, .backImg, .categoriesImgs {
     display: flex;
+
+}
+.pageLinks, .linkContainer, main{
     align-items: center;
 }
-
-.logo {
-    
+.pageLinks{
+    justify-content: space-between;
+    margin-right: 220px;
+    gap: 10px
 }
+.linkContainer {
+    font-size: 20px;
+    gap: 5px;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a:hover {
+    color: gray;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 200vh;
+    margin: 0 auto; 
+}
+
+.backImg {
+    background-image: url(/images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    height: 50vh;
+    width: 100%;
+    margin: 0 auto; 
+    align-items: flex-end;
+    justify-content: center;
+}
+
+h1 {
+    background-color: azure;
+    font-size: 40px;
+    margin: 10vh;
+}
+
+.categories {
+    
+
+}
+
+.imgfood {
+    width: 50vh;
+    height: 52vh;
+}
+
