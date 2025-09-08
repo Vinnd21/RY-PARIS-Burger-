@@ -18,12 +18,18 @@ body {
 header {
     background-color: peru;
     display: flex;
+    flex-direction: column; 
+    width: 100%;
+}
+
+.headerDiv {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 60px;
-    height: 120px;
+    height: 120px; 
 }
-
 .logo img {
     height: 80px;
 }
@@ -43,23 +49,31 @@ header {
     color: gray;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    max-width: 1200px;
-    margin: 0 auto; 
-}
-
 .backImg {
-    background-image: url(/images/hero-image.jpg);
+    background-image: url('/images/hero-image.jpg');
     background-repeat: no-repeat;
-    background-size: cover;   
+    background-size: cover;
+    background-position: center;
     height: 50vh;
     width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+.overText h1 {
+    background-color: white;
+    padding: 15px 25px;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10vh;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin: 0 auto; 
 }
 
 .overText h1 {
@@ -70,12 +84,19 @@ main {
     margin: 10vh;
 }
 
-
 .categories {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+    justify-content: center;
     line-height: 1.5;
+    padding: 40px 20px;      
 }
 
+.text{
+    max-width: 1200px;
+    text-align: center;
+}
 .categories h2 {
     font-size: 32px;
     font-weight: bold;
@@ -85,9 +106,6 @@ main {
 .categories p {
     font-size: 18px;
     margin-bottom: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -105,10 +123,12 @@ main {
     border-radius: 6px;
 }
 
-.two{
+.categories.two {
     background-color: rgb(229, 232, 235);
+    padding: 40px 80px;  
 
 }
+
 .backColor {
     background-color: white;
 }
@@ -123,7 +143,7 @@ nav a:hover {
 
 /* Hero image section */
 .backhamburg {
-    background-image: url(/images/bengal-burger.jpg);
+    background-image: url("/images/burger-hero.jpg");
     background-size: cover;
     background-position: center;
     height: 50vh;
@@ -143,7 +163,8 @@ nav a:hover {
 .time {
     display: flex;
     justify-content: space-around;
-    background-color: #e6e6f0;  
+    background-color: #e6e6f0; 
+    align-items: center; 
     padding: 50px 0;
     font-size: 18px;
     font-weight: 500;
